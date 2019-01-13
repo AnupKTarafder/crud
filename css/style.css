@@ -1,0 +1,438 @@
+/* Modal Content */
+/* line 177, ../scss/style.scss */
+body {
+  text-align: center;
+  width: 70%;
+  margin: 20%;
+}
+
+/* line 182, ../scss/style.scss */
+tr, td {
+  margin: 40x;
+  border: 1px grey;
+}
+
+/* line 186, ../scss/style.scss */
+table {
+  width: 100%;
+  align-items: 'center';
+}
+
+/* line 193, ../scss/style.scss */
+.result {
+  border: 1px solid black;
+}
+
+/* line 196, ../scss/style.scss */
+.mymodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 209, ../scss/style.scss */
+.mymodal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  align-self: stretch;
+}
+
+/* line 218, ../scss/style.scss */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+/* line 238, ../scss/style.scss */
+.btn:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  color: #333;
+  text-decoration: none;
+}
+/* line 244, ../scss/style.scss */
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+/* line 245, ../scss/style.scss */
+.btn:active:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 254, ../scss/style.scss */
+.btn:active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 258, ../scss/style.scss */
+.btn:hover {
+  color: #333;
+  text-decoration: none;
+}
+/* line 262, ../scss/style.scss */
+.btn .caret {
+  margin-left: 0;
+}
+/* line 265, ../scss/style.scss */
+.btn .label {
+  position: relative;
+  top: -1px;
+}
+/* line 269, ../scss/style.scss */
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+/* line 275, ../scss/style.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+/* line 279, ../scss/style.scss */
+.btn-primary:focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+/* line 284, ../scss/style.scss */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+/* line 289, ../scss/style.scss */
+.btn-primary:active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+  background-image: none;
+}
+/* line 294, ../scss/style.scss */
+.btn-primary:active:hover {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+/* line 299, ../scss/style.scss */
+.btn-primary:active:focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+/* line 305, ../scss/style.scss */
+.btn-primary:active.focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+/* line 310, ../scss/style.scss */
+.btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+
+/* line 315, ../scss/style.scss */
+.btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+
+/* line 320, ../scss/style.scss */
+.btn-primary.active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+  background-image: none;
+}
+/* line 325, ../scss/style.scss */
+.btn-primary.active:hover {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+/* line 330, ../scss/style.scss */
+.btn-primary.active:focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+
+/* line 336, ../scss/style.scss */
+.btn-primary.active.focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+
+/* line 342, ../scss/style.scss */
+.btn-primary.disabled:hover {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+/* line 346, ../scss/style.scss */
+.btn-primary.disabled:focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+/* line 352, ../scss/style.scss */
+.btn-primary[disabled]:hover {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+/* line 356, ../scss/style.scss */
+.btn-primary[disabled]:focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+/* line 361, ../scss/style.scss */
+.btn-primary.disabled.focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+/* line 365, ../scss/style.scss */
+.btn-primary[disabled].focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+/* line 370, ../scss/style.scss */
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  overflow: auto;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 380, ../scss/style.scss */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 385, ../scss/style.scss */
+.container > .navbar-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* line 389, ../scss/style.scss */
+.container > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* line 393, ../scss/style.scss */
+.container .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+/* line 398, ../scss/style.scss */
+.container:before {
+  display: table;
+  content: " ";
+}
+/* line 402, ../scss/style.scss */
+.container:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/* line 408, ../scss/style.scss */
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 413, ../scss/style.scss */
+.container-fluid > .navbar-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* line 417, ../scss/style.scss */
+.container-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* line 421, ../scss/style.scss */
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+/* line 426, ../scss/style.scss */
+.container-fluid:before {
+  display: table;
+  content: " ";
+}
+/* line 430, ../scss/style.scss */
+.container-fluid:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/* line 437, ../scss/style.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+/* line 441, ../scss/style.scss */
+table col[class*="col-"] {
+  position: static;
+  display: table-column;
+  float: none;
+}
+/* line 446, ../scss/style.scss */
+table td[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}
+/* line 451, ../scss/style.scss */
+table th[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}
+
+/* line 457, ../scss/style.scss */
+td {
+  padding: 0;
+}
+
+/* line 460, ../scss/style.scss */
+th {
+  padding: 0;
+  text-align: left;
+}
+
+/* line 465, ../scss/style.scss */
+.table-bordered {
+  border: 1px solid #ddd;
+}
+/* line 469, ../scss/style.scss */
+.table-bordered > thead > tr > th {
+  border: 1px solid #ddd;
+  border-bottom-width: 2px;
+}
+/* line 473, ../scss/style.scss */
+.table-bordered > thead > tr > td {
+  border: 1px solid #ddd;
+  border-bottom-width: 2px;
+}
+/* line 481, ../scss/style.scss */
+.table-bordered > tbody > tr > th {
+  border: 1px solid #ddd;
+}
+/* line 484, ../scss/style.scss */
+.table-bordered > tbody > tr > td {
+  border: 1px solid #ddd;
+}
+/* line 491, ../scss/style.scss */
+.table-bordered > tfoot > tr > th {
+  border: 1px solid #ddd;
+}
+/* line 494, ../scss/style.scss */
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+
+/* line 501, ../scss/style.scss */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+/* line 518, ../scss/style.scss */
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+/* line 524, ../scss/style.scss */
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+/* line 528, ../scss/style.scss */
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+/* line 531, ../scss/style.scss */
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+/* line 534, ../scss/style.scss */
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 539, ../scss/style.scss */
+.form-control[disabled] {
+  background-color: #eee;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+/* line 544, ../scss/style.scss */
+.form-control[readonly] {
+  background-color: #eee;
+  opacity: 1;
+}

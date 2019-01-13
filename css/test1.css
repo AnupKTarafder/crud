@@ -1,0 +1,16 @@
+/* line 1, ../scss/test1.scss */
+.container {
+  width: 100%;
+}
+
+/* line 5, ../scss/test1.scss */
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+/* line 10, ../scss/test1.scss */
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+}

@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <script src="script.js"></script>
+    <title>CRUD with JS</title>
+</head>
+<body onload="init()">
+    <div class="container">
+        <button class="btn btn-primary" id='create' onclick='create()'>Create</button>
+
+        <div class="mymodal" id="inp">
+            <div class="mymodal-content">
+                <p>Student data</p>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" class="form-control" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Roll</td>
+                        <td><input type="text" class="form-control" id="roll"></td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td><input type="text" class="form-control" id="age"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><input type="text" class="form-control" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>CGPA</td>
+                        <td><input type="text" class="form-control" id="cgpa"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="text-align:right;">
+                            <button class="btn btn-primary" id="adduser" onclick='adduser()'>Save</button>
+                            <button class="btn btn-primary" id="cancel" onclick='cancel()'>Cancel</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container" id='tablecontainer'>
+        <table id="regtable" class='table table-bordered' style="width:60%" align= 'center'>
+            <thead>
+                <tr>
+                    <th>Name  <button class="btn btn-primary" onclick="sortATable(0)">↑</button><button class="btn btn-primary" onclick="sortDTable(0)">↓</button></th>
+                    <th>Roll  <button class="btn btn-primary" onclick="sortATable(1)">↑</button><button class="btn btn-primary" onclick="sortDTable(1)">↓</button></th>
+                    <th>CGPA  <button class="btn btn-primary" onclick="sortATable(2)">↑</button><button class="btn btn-primary" onclick="sortDTable(2)">↓</button></th>
+                    <th style="width: 20%;">Action</th>
+                </tr>
+            </thead>
+            <tbody id="tablerows" align='center'>
+
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
